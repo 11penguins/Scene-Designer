@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Scene-Designer learns design intelligence for agentic 3D scene generation through complementary design and critique experiences.">
+  <meta name="theme-color" content="#f6f8f7">
+  <title>Scene-Designer | Agentic 3D Scene Generation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <nav class="nav shell" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Scene-Designer home">
+        <img src="assets/title-mark.webp" alt="" width="42" height="46">
+        <span>Scene-Designer</span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#method">Method</a>
+        <a href="#results">Results</a>
+        <a href="#critic">Critic</a>
+        <a href="#citation">Citation</a>
+      </div>
+      <div class="nav-actions">
+        <a class="icon-link" href="assets/paper.pdf" aria-label="Read the paper" title="Paper">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6zM14 2v5h5M9 12h6M9 16h6"/></svg>
+        </a>
+        <a class="icon-link is-disabled" aria-label="Code repository coming soon" title="Code coming soon">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 19c-4 1.2-4-2-5-2.5M14 22v-3.2c0-.9.1-1.4-.4-2 3.3-.4 6.8-1.6 6.8-7.2A5.6 5.6 0 0 0 19 5.7 5.2 5.2 0 0 0 18.9 2S17.8 1.6 15 3.5a13 13 0 0 0-6 0C6.2 1.6 5.1 2 5.1 2A5.2 5.2 0 0 0 5 5.7a5.6 5.6 0 0 0-1.5 3.9c0 5.6 3.5 6.8 6.8 7.2-.4.4-.5.9-.5 1.7V22"/></svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-content shell">
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span> Agentic 3D scene generation</div>
+          <h1>Scene-Designer</h1>
+          <p class="hero-subtitle">Learning Design Intelligence for Agentic 3D Scene Generation</p>
+          <p class="hero-summary">An agentic framework that learns to design high-quality indoor scenes, critique their quality, and correct mistakes with less trial and error.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="assets/paper.pdf">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6zM14 2v5h5M9 12h6M9 16h6"/></svg>
+              Paper
+            </a>
+            <span class="button secondary is-disabled" aria-disabled="true">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 19c-4 1.2-4-2-5-2.5M14 22v-3.2c0-.9.1-1.4-.4-2 3.3-.4 6.8-1.6 6.8-7.2A5.6 5.6 0 0 0 19 5.7 5.2 5.2 0 0 0 18.9 2S17.8 1.6 15 3.5a13 13 0 0 0-6 0C6.2 1.6 5.1 2 5.1 2A5.2 5.2 0 0 0 5 5.7a5.6 5.6 0 0 0-1.5 3.9c0 5.6 3.5 6.8 6.8 7.2-.4.4-.5.9-.5 1.7V22"/></svg>
+              Code soon
+            </span>
+          </div>
+        </div>
+        <div class="hero-mark">
+          <img src="assets/title-mark.webp" alt="Scene-Designer mascot holding a floor plan" width="330" height="364">
+        </div>
+      </div>
+      <a class="scroll-cue" href="#overview" aria-label="Explore the project">
+        <span>Explore</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+      </a>
+    </section>
+
+    <section class="metrics-band" aria-label="Dataset and evaluation highlights">
+      <div class="shell metrics">
+        <div class="metric"><strong>35K</strong><span>Scene-OTA design steps</span></div>
+        <div class="metric"><strong>15K</strong><span>Scene-OTC critique examples</span></div>
+        <div class="metric"><strong>89%</strong><span>Pairwise Critic accuracy</span></div>
+        <div class="metric"><strong>76%</strong><span>Four-scene ranking accuracy</span></div>
+      </div>
+    </section>
+
+    <section class="section intro" id="overview">
+      <div class="shell narrow">
+        <div class="section-kicker">Design intelligence</div>
+        <h2>Good scenes must work, not merely look plausible.</h2>
+        <p class="lead">Language-guided scene generation requires more than object placement. A capable designer must satisfy physical constraints, preserve functional relationships, organize coherent layouts, and know how to repair errors efficiently.</p>
+        <div class="capability-grid">
+          <article>
+            <div class="capability-index">01</div>
+            <h3>Scene design</h3>
+            <p>Construct complete scenes while turning execution feedback into precise, targeted corrections.</p>
+            <div class="signal-list"><span>Physical validity</span><span>Functional correctness</span><span>Layout coherence</span></div>
+          </article>
+          <div class="duality" aria-hidden="true"><span>Design</span><i></i><span>Critique</span></div>
+          <article>
+            <div class="capability-index">02</div>
+            <h3>Scene critique</h3>
+            <p>Compare scene quality beyond conspicuous local cues and explain why one design is more usable.</p>
+            <div class="signal-list"><span>Quality ranking</span><span>Error diagnosis</span><span>Design preference</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section evidence-band">
+      <div class="shell split-evidence">
+        <div>
+          <div class="section-kicker">The gap</div>
+          <h2>General models can identify errors, yet still struggle to repair and rank scenes reliably.</h2>
+          <p>In 100 GPT-5.2 construction trajectories, even straightforward errors often trigger long correction chains. On Scene-OTC, pairwise judgments are easier, while coherent four-scene ranking exposes a larger deficit in domain-specific critique experience.</p>
+          <dl class="inline-facts">
+            <div><dt>18%</dt><dd>of window-blockage cases require more than five corrections</dd></div>
+            <div><dt>~33%</dt><dd>Critic accuracy gain over general-purpose models</dd></div>
+          </dl>
+        </div>
+        <button class="figure-button" type="button" data-lightbox="assets/critic-diagnostic.webp" aria-label="Expand Critic diagnostic figure">
+          <img src="assets/critic-diagnostic.webp" alt="Critic performance comparison across physical validity, functional correctness, and layout coherence" loading="lazy">
+          <span>GPT-5.2 vs. domain-trained Scene-Critic</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section" id="method">
+      <div class="shell">
+        <div class="section-heading">
+          <div><div class="section-kicker">Framework</div><h2>Learning from complementary design and critique experience.</h2></div>
+          <p>Scene-Designer couples trajectory-level construction supervision with controlled scene preferences, then uses a frozen Critic to guide policy optimization.</p>
+        </div>
+        <button class="paper-figure full" type="button" data-lightbox="assets/system-overview.webp" aria-label="Expand Scene-Designer overview">
+          <img src="assets/system-overview.webp" alt="Overview of Scene-Designer, Scene-OTA construction, training pipeline, and Scene-OTC construction" loading="lazy">
+        </button>
+        <div class="method-steps">
+          <article>
+            <div class="step-top"><span>01</span><b>Observation · Thought · Action</b></div>
+            <h3>Scene-OTA-35K</h3>
+            <p>1K scenes and 35K construction steps retain intermediate observations, action reasoning, execution feedback, and successful recovery experience.</p>
+            <ul><li>Causal trajectory consolidation</li><li>Error-aware candidate identification</li><li>Correction-effect evaluation</li></ul>
+          </article>
+          <article>
+            <div class="step-top"><span>02</span><b>Observation · Thought · Critic</b></div>
+            <h3>Scene-OTC-15K</h3>
+            <p>Controlled degradations teach the Critic to rank physical validity, functional correctness, and layout coherence at multiple severity levels.</p>
+            <ul><li>Accumulating perturbations</li><li>Different perturbation strengths</li><li>Same perturbation, different objects</li></ul>
+          </article>
+          <article>
+            <div class="step-top"><span>03</span><b>Critic-guided optimization</b></div>
+            <h3>Scene-GRPO</h3>
+            <p>Multiple candidate edits branch from the same state. A frozen Critic ranks branches and compares parent-child quality to direct learning.</p>
+            <ul><li>Local branch ranking</li><li>Parent-child improvement reward</li><li>Global efficiency and completeness</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section grpo-band">
+      <div class="shell grpo-layout">
+        <div>
+          <div class="section-kicker light">Scene-GRPO</div>
+          <h2>Explore several edits. Continue with the strongest one.</h2>
+          <p>At each editing step, the policy expands candidate actions from a shared parent scene. The Critic supplies local preferences while global rewards encourage efficient, complete construction.</p>
+          <div class="reward-legend"><span><i class="blue"></i>Branch ranking</span><span><i class="coral"></i>Improvement</span><span><i class="green"></i>Global quality</span></div>
+        </div>
+        <button class="paper-figure dark" type="button" data-lightbox="assets/grpo-overview.webp" aria-label="Expand Scene-GRPO figure">
+          <img src="assets/grpo-overview.webp" alt="Scene-GRPO candidate branching, Critic ranking, and reward design" loading="lazy">
+        </button>
+      </div>
+    </section>
+
+    <section class="section" id="results">
+      <div class="shell">
+        <div class="section-heading">
+          <div><div class="section-kicker">Generation results</div><h2>More coherent scenes, with more direct corrections.</h2></div>
+          <p>Scene-Designer improves functionality, layout quality, and realism while retaining strong physical validity across common and uncommon room types.</p>
+        </div>
+        <button class="result-stage" type="button" data-lightbox="assets/qualitative-results.webp" aria-label="Expand qualitative scene results">
+          <img src="assets/qualitative-results.webp" alt="Generated dining room and reading-focused living room examples" loading="lazy">
+        </button>
+        <div class="result-notes">
+          <div><strong>−57%</strong><span>average tool calls after causal trajectory consolidation</span></div>
+          <div><strong>21% → 5%</strong><span>window-blockage cases requiring more than five corrections</span></div>
+          <div><strong>40% → 7%</strong><span>interaction-orientation errors requiring more than five corrections</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section critic-section" id="critic">
+      <div class="shell">
+        <div class="critic-heading">
+          <div><div class="section-kicker">Reliable scene critique</div><h2>The Critic maintains a coherent preference over multiple scene degradations.</h2></div>
+          <p>Joint Scene-OTA + Scene-OTC training improves both pairwise selection and full four-scene ranking. Five shuffled image-label orders confirm that performance does not depend on fixed positions.</p>
+        </div>
+        <div class="critic-grid">
+          <button class="chart-panel" type="button" data-lightbox="assets/critic-n2.webp">
+            <span class="chart-label">Pairwise comparison</span>
+            <img src="assets/critic-n2.webp" alt="Pairwise Scene-OTC accuracy comparison" loading="lazy">
+          </button>
+          <button class="chart-panel" type="button" data-lightbox="assets/critic-n4.webp">
+            <span class="chart-label">Four-scene ranking</span>
+            <img src="assets/critic-n4.webp" alt="Four-scene ranking accuracy comparison" loading="lazy">
+          </button>
+          <button class="chart-panel wide" type="button" data-lightbox="assets/order-robustness.webp">
+            <div class="chart-copy"><span class="chart-label">Order robustness</span><strong>90.00 ± 2.07%</strong><small>n=2 across five shuffled orders</small><strong>75.64 ± 6.88%</strong><small>n=4 across five shuffled orders</small></div>
+            <img src="assets/order-robustness.webp" alt="Critic accuracy under five shuffled image-label orders" loading="lazy">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section takeaway">
+      <div class="shell narrow">
+        <blockquote>Design and critique are not separate endpoints. Learning why a scene is better can help an agent decide what to build next.</blockquote>
+        <p>Scene-Designer provides evidence that construction experience and critique experience can reinforce one another, both during training and through test-time Critic guidance.</p>
+      </div>
+    </section>
+
+    <section class="section citation" id="citation">
+      <div class="shell citation-layout">
+        <div>
+          <div class="section-kicker">Citation</div>
+          <h2>Scene-Designer</h2>
+          <p>Author and publication metadata will be added when the paper is de-anonymized.</p>
+        </div>
+        <div class="code-block">
+          <button class="copy-button" type="button" aria-label="Copy BibTeX" title="Copy BibTeX">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 8h11v12H8zM5 16H4V4h11v1"/></svg>
+          </button>
+          <pre><code id="bibtex">@article{scenedesigner2027,
+  title   = {Scene-Designer: Learning Design Intelligence
+             for Agentic 3D Scene Generation},
+  author  = {Anonymous Authors},
+  year    = {2027}
+}</code></pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <div class="footer-brand"><img src="assets/title-mark.webp" alt="" width="38" height="42"><span><b>Scene-Designer</b><small>Learning Design Intelligence</small></span></div>
+      <p>Project page · 2027</p>
+      <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" aria-label="Expanded figure">
+    <button type="button" class="lightbox-close" aria-label="Close figure">×</button>
+    <img src="" alt="Expanded research figure">
+  </dialog>
+  <div class="toast" role="status" aria-live="polite">BibTeX copied</div>
+  <script src="script.js"></script>
+</body>
+</html>
